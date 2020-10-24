@@ -4,25 +4,30 @@
 }
 
 .fixed-fraction-container {
-
+ grid-template-columns: 200px 1fr;
 }
 
 .fixed-auto-container {
+    grid-template-columns: 200px auto;
 
 }
 
 .two-fraction-container {
-
+grid-template-columns: 1fr 1fr;
 }
 
 .two-auto-container {
-
+grid-template-columns: auto auto;
 }
 
+/* fraction dominates auto value */
 .auto-fraction-container {
-
+grid-template-columns: auto 1fr;
 }
 
+/* 
+left and right only grow as big as they need,
+then fr fills the gap */
 .auto-fraction-auto-container {
-
+    grid-template-columns: auto 1fr auto;
 }
